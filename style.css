@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: blue;
+
+}
+
+.fde {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 40px;
+}
+
+.fm {
+    background-color: white;
+    width: 60%;
+    height: 820px;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+.fm input{
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.ip {
+    height: 20px;
+}
+
+.btn {
+    background-color: blue;
+    height: 30px;
+    width: 80px;
+    position: relative;
+    left: 92px;
+    top: -50px;
+    color: white;
+    border-radius: 5px;
+}
+
+.id {
+    position: relative;
+    left: 92px;
+}
+
+.rp {
+    position: relative;
+    left: 92px;
+    top: 30px;
+}
+
+@media screen and (max-width:600px) {
+    .fde{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fm {
+        background-color: white;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        left: -200px;
+    }
+}

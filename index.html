@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="fm">
+        <div class="rp">
+            <h2 style="font-family: sans-serif;">Registration</h2>
+            <h5 style="color: grey; font-family: sans-serif;">Personal Details</h5>
+        </div>
+        <div class="fde">
+            <div>
+                <label for=" " style="font-family: sans-serif;">Full Name</label><br><br>
+                <input type="text" id="name" name="name" class="ip" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Date of Birth</label><br><br>
+                <input type="date" id="date" name="date" style="width: 176px; height: 34px;" class="ip" placeholder="Enter Birth Date">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Email</label><br><br>
+                <input type="email" id="email" name="email" class="ip" placeholder="Enter your email">
+            </div>
+        </div>
+
+
+        <div class="fde">
+            <div>
+                <label for="" style="font-family: sans-serif;">Mobile number</label><br><br>
+                <input type="number" id="number" name="number" class="ip" placeholder="Enter mobile number">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Gender</label><br><br>
+                <input type="text" id="gr" name="gr" class="ip" placeholder="Enter your gender">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Occupation</label><br><br>
+                <input type="text" id="on" name="on" class="ip" placeholder="Enter Occupation">
+            </div>
+        </div>
+
+        <h5 class="id" style="color: grey; font-family: sans-serif;">Identity Detalis</h5>
+        <div class="fde">
+
+            <div>
+
+                <label for="" style="font-family: sans-serif;">ID Type</label><br><br>
+                <input type="text" id="it" name="it" class="ip" placeholder="Enter Id type">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">ID Number</label><br><br>
+                <input type="number" id="ir" name="ir" class="ip" placeholder="Enter ID Number">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Issue Authority</label><br><br>
+                <input type="text" id="ia" name="ia" class="ip" placeholder="Enter Issue Authority">
+            </div>
+        </div>
+
+        <div class="fde">
+            <div>
+                <label for="" style="font-family: sans-serif;">Issue Date</label><br><br>
+                <input type="text" id="ie" name="ie" class="ip" placeholder="Enter ID Issue Date">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Issue State</label><br><br>
+                <input type="text" id="is" name="is" class="ip" placeholder="Enter ID Issue State">
+            </div>
+            <div>
+                <label for="" style="font-family: sans-serif;">Expiry Date</label><br><br>
+                <input type="text" id="ed" name="ed" class="ip" placeholder="Enter ID Expiry Date">
+            </div>
+        </div>
+        <button class="btn" onclick="hello()">
+            Next->
+        </button>
+    </div>
+
+
+</body>
+<script>
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let email = document.getElementById("email").value;
+    let number = document.getElementById("number").value;
+    let gr = document.getElementById("gr").value;
+    let on = document.getElementById("on").value;
+    let it = document.getElementById("it").value;
+    let ir = document.getElementById("ir").value;
+    let ia = document.getElementById("ia").value;
+    let is = document.getElementById("is").value;
+    let ie = document.getElementById("ie").value;
+    let ed = document.getElementById("ed").value;
+
+
+    function hello() {
+        if (name === "" || date === "" || email === "" || number === "" || gr === "" || on === "" || it === "" || ir === "" || ia === "" || is === "" || ie === "" || ed === "") {
+            // alert("failed")
+            // return false;
+            let name = document.getElementById("name").style.borderColor = "red";
+            let date = document.getElementById("date").style.borderColor = "red";
+            let email = document.getElementById("email").style.borderColor = "red";
+            let number = document.getElementById("number").style.borderColor = "red";
+            let gr = document.getElementById("gr").style.borderColor = "red";
+            let on = document.getElementById("on").style.borderColor = "red";
+            let it = document.getElementById("it").style.borderColor = "red";
+            let ir = document.getElementById("ir").style.borderColor = "red";
+            let ia = document.getElementById("ia").style.borderColor = "red";
+            let is = document.getElementById("is").style.borderColor = "red";
+            let ie = document.getElementById("ie").style.borderColor = "red";
+            let ed = document.getElementById("ed").style.borderColor = "red";
+        }
+        return true;
+    }
+</script>
+
+</html>
